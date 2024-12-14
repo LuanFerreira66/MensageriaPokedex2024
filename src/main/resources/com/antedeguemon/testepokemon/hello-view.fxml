@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox alignment="CENTER" prefHeight="629.0" prefWidth="1041.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.antedeguemon.testepokemon.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="552.0" prefWidth="1069.0">
+      <children>
+         <VBox fx:id="Options" prefHeight="581.0" prefWidth="238.0" spacing="10.0">
+            <children>
+               <Text fx:id="InfoNomeTreinador" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Do Treinador AQ" wrappingWidth="232.13671875">
+                  <font>
+                     <Font size="21.0" />
+                  </font>
+               </Text>
+               <Text fx:id="InforIdTreinador" strokeType="OUTSIDE" strokeWidth="0.0" text="Id Treinador : " wrappingWidth="225.083984375">
+                  <VBox.margin>
+                     <Insets bottom="100.0" />
+                  </VBox.margin>
+                  <font>
+                     <Font size="21.0" />
+                  </font>
+               </Text>
+               <Text fx:id="TotalVisto" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Visto:" wrappingWidth="219.13671875">
+                  <font>
+                     <Font size="21.0" />
+                  </font>
+               </Text>
+               <Text fx:id="TotalVisto1" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Capturado:" wrappingWidth="228.13671875">
+                  <font>
+                     <Font size="21.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="50.0" />
+                  </VBox.margin>
+               </Text>
+               <Button fx:id="opcoesTreinador" mnemonicParsing="false" onAction="#btnCadastroTreinador" prefHeight="25.0" prefWidth="109.0" text="Cadastrar Treinador">
+                  <VBox.margin>
+                     <Insets left="50.0" />
+                  </VBox.margin>
+               </Button>
+               <Button fx:id="ListarPokemons" mnemonicParsing="false" onAction="#btnListarPokemons" prefHeight="25.0" prefWidth="108.0" text="Listar Pokemons">
+                  <VBox.margin>
+                     <Insets left="50.0" />
+                  </VBox.margin>
+               </Button>
+               <Button fx:id="cadastroPokemon" mnemonicParsing="false" onAction="#btnCadastrarPokemon" prefHeight="25.0" prefWidth="157.0" text="Cadastar Novo Pokemon">
+                  <VBox.margin>
+                     <Insets left="25.0" />
+                  </VBox.margin>
+               </Button>
+               <Button fx:id="trocarTreinador" mnemonicParsing="false" onAction="#btnTrocarTreinador" prefHeight="25.0" prefWidth="129.0" text="Trocar Treinador">
+                  <VBox.margin>
+                     <Insets left="40.0" />
+                  </VBox.margin>
+               </Button>
+               <TextField fx:id="trocarTreinadorField" />
+            </children>
+         </VBox>
+         <VBox prefHeight="552.0" prefWidth="369.0">
+            <children>
+               <ScrollPane fx:id="scrollPanePokemon" prefHeight="549.0" prefWidth="366.0">
+                  <content>
+                     <TextFlow fx:id="textoDosPokemons" prefHeight="567.0" prefWidth="349.0" />
+                  </content>
+               </ScrollPane>
+            </children>
+         </VBox>
+         <VBox prefHeight="552.0" prefWidth="402.0">
+            <children>
+               <HBox prefHeight="47.0" prefWidth="400.0">
+                  <children>
+                     <Label prefHeight="40.0" prefWidth="86.0" text="Nome: ">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="nomePokemon" prefHeight="40.0" prefWidth="314.0">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox prefHeight="47.0" prefWidth="400.0">
+                  <children>
+                     <Label prefHeight="40.0" prefWidth="86.0" text="Tipo: ">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="tipoPokemon" prefHeight="40.0" prefWidth="319.0">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox prefHeight="47.0" prefWidth="400.0">
+                  <children>
+                     <Label prefHeight="40.0" prefWidth="254.0" text="Tipo Secundario:">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="tipoSecundario" prefHeight="40.0" prefWidth="319.0">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox prefHeight="47.0" prefWidth="400.0">
+                  <children>
+                     <Label prefHeight="40.0" prefWidth="155.0" text="Habitat: ">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="habitat" prefHeight="40.0" prefWidth="319.0">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox prefHeight="47.0" prefWidth="400.0">
+                  <children>
+                     <Label prefHeight="40.0" prefWidth="155.0" text="Descrição:">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="descricao" prefHeight="40.0" prefWidth="319.0">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox prefHeight="47.0" prefWidth="400.0">
+                  <children>
+                     <Label prefHeight="40.0" prefWidth="155.0" text="Status:">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="descricao1" prefHeight="40.0" prefWidth="319.0">
+                        <font>
+                           <Font size="21.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <Button fx:id="atualizarStatus" mnemonicParsing="false" onAction="#btnAtualizarStatsPokemon" prefHeight="25.0" prefWidth="168.0" text="Atualizar Status">
+                  <VBox.margin>
+                     <Insets left="95.0" />
+                  </VBox.margin>
+               </Button>
+               <Button fx:id="verificarInfo" mnemonicParsing="false" onAction="#btnVerificarInfo" prefHeight="25.0" prefWidth="165.0" text="Verificar Info">
+                  <VBox.margin>
+                     <Insets left="95.0" />
+                  </VBox.margin>
+               </Button>
+               <TextField fx:id="infoTxt" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+</VBox>

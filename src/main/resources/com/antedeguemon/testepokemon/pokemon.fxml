@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.antedeguemon.testepokemon.PokemonController">
+   <children>
+      <Text layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="141.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo:" wrappingWidth="141.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="9.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TipoSecundario: " wrappingWidth="170.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="9.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id Pokemon: " wrappingWidth="179.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="9.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IdPokedex: " wrappingWidth="179.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="13.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Habitat:" wrappingWidth="170.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="9.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição: " wrappingWidth="170.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nome" layoutX="85.0" layoutY="15.0" />
+      <TextField fx:id="tipo" layoutX="85.0" layoutY="51.0" />
+      <TextField fx:id="tipoSecundario" layoutX="171.0" layoutY="88.0" />
+      <TextField fx:id="idPokemon" layoutX="141.0" layoutY="200.0" />
+      <TextField fx:id="desc" layoutX="129.0" layoutY="163.0" prefHeight="25.0" prefWidth="305.0" />
+      <TextField fx:id="habitat" layoutX="114.0" layoutY="126.0" />
+      <TextField fx:id="idPokedex" layoutX="133.0" layoutY="238.0" />
+      <Button fx:id="salvarPokemon" layoutX="190.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnSalvarPokemon" text="Salvar" />
+      <Button fx:id="sair" layoutX="313.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnSair" text="Sair" />
+   </children>
+</AnchorPane>
